@@ -16,9 +16,9 @@
     </nav>
 
     <div class="about">
-        <h1>About This Website</h1>
+        <h1>${pageTitle!'About This Website'}</h1>
 
-        <img src="goku.jpeg" alt="Goku">
+        <img src="${character.imageUrl!'/goku.jpeg'}" alt="${character.name!'Goku'}" />
 
         <p>
             I chose dragon ball because it was a show that I grew up with and it continued to be a show that I watched

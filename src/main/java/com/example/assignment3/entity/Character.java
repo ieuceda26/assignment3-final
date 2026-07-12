@@ -28,10 +28,12 @@ public class Character {
 
     private String appearance;
 
+    private String powerLevel;
+
     // Constructors
     public Character() {}
 
-    public Character(String name, String description, String universe, String role, String species, String imageUrl, String abilities, String appearance) {
+    public Character(String name, String description, String universe, String role, String species, String imageUrl, String abilities, String appearance, String powerLevel) {
         this.name = name;
         this.description = description;
         this.universe = universe;
@@ -40,7 +42,7 @@ public class Character {
         this.imageUrl = imageUrl;
         this.abilities = abilities;
         this.appearance = appearance;
-
+        this.powerLevel = powerLevel;
     }
 
     // Getters
@@ -51,6 +53,7 @@ public class Character {
     public String getRole() { return role; }
     public String getSpecies() { return species; }
     public String getImageUrl() { return imageUrl; }
+    public String getPowerLevel() { return powerLevel; }
     public String getAbilities() { return abilities; }
     public String getAppearance() { return appearance; }
     // Setters
@@ -63,5 +66,6 @@ public class Character {
     public void setImageUrl(String imageUrl) { this.imageUrl = imageUrl; }
     public void setAbilities(String abilities) { this.abilities = abilities; }
     public void setAppearance(String appearance) { this.appearance = appearance; }
+    public void setPowerLevel(String powerLevel) { this.powerLevel = powerLevel; }
 }
 
