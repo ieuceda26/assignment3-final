@@ -26,7 +26,13 @@
         <label>Role:</label>
         <input type="text">
 
+        <label>Abilities:</label>
+        <input type="text">
+
         <label>Image URL:</label>
+        <input type="text">
+
+        <label>Species:</label>
         <input type="text">
 
         <label>Short Description:</label>
