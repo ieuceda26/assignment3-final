@@ -1,70 +1,39 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Dragon Ball Character Gallery</title>
+    <title>${pageTitle!'Character Gallery'}</title>
     <link rel="stylesheet" href="/styles.css">
 </head>
+
 <body>
+    <nav>
+        <a href="/characters">Home</a>
+        <a href="/characters/1">Details</a>
+        <a href="/about">About</a>
+        <a href="/characters/new">Add a Character</a>
+    </nav>
 
-<nav>
-    <a href="/characters">Home</a>
-    <a href="/characters/1">Details</a>
-    <a href="/about">About</a>
-    <a href="/characters/new">Add a Character</a>
-</nav>
 
-<h1>Character Gallery</h1>
+    <main>
+        <h1>${pageTitle!'Character Gallery'}</h1>
 
-<input type="text" placeholder="Search characters">
-
-<div class="gallery">
-
-    <div class="card">
-        <img src="goku.jpeg" alt="Goku">
-        <h2>Goku</h2>
-        <p>Universe 7</p>
-        <p>Main Hero</p>
-        <p>Power Level: 9000+</p>
-        <a href="/characters/1">View Details</a>
-    </div>
-
-    <div class="card">
-        <img src="futuretrunks.jpeg" alt="Future Trunks">
-        <h2>Future Trunks</h2>
-        <p>Future Timeline</p>
-        <p>Warrior</p>
-        <p>Power Level: 8500+</p>
-        <a href="/characters/3">View Details</a>
-    </div>
-
-    <div class="card">
-        <img src="futuregohan.jpeg" alt="Future Gohan">
-        <h2>Future Gohan</h2>
-        <p>Future Timeline</p>
-        <p>Mentor</p>
-        <p>Power Level: 8000+</p>
-        <a href="/characters/2">View Details</a>
-    </div>
-
-    <div class="card">
-        <img src="vegeta.jpeg" alt="Vegeta">
-        <h2>Vegeta</h2>
-        <p>Universe 7</p>
-        <p>Saiyan Prince</p>
-        <p>Power Level: 8800+</p>
-        <a href="/characters/4">View Details</a>
-    </div>
-
-    <div class="card">
-        <img src="piccolo.jpeg" alt="Piccolo">
-        <h2>Piccolo</h2>
-        <p>Universe 7</p>
-        <p>Namekian Warrior</p>
-        <p>Power Level: 7500+</p>
-        <a href="/characters/5">View Details</a>
-    </div>
-
-</div>
+        <div class="gallery">
+            <#list characterList as character>
+                <div class="card">
+                    <img src="${character.imageUrl!''}" alt="${character.name}" />
+                    <div class="card-body">
+                        <h2>${character.name}</h2>
+                        <p>${character.universe!''}</p>
+                        <p>${character.role!''}</p>
+                        <p>${character.powerLevel!''}</p>
+                        <a href="/characters/${character.characterId}">View Details</a>
+                    </div>
+                </div>
+            </#list>
+        </div>
+    </main>
 
 </body>
+
 </html>
