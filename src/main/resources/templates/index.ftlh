@@ -10,7 +10,7 @@
     <a href="/characters">Home</a>
     <a href="/characters/1">Details</a>
     <a href="/about">About</a>
-    <a href="/new-character-form">Add a Character</a>
+    <a href="/characters/new">Add a Character</a>
 </nav>
 
 <h1>Character Gallery</h1>

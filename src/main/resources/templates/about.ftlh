@@ -2,17 +2,17 @@
 <html>
 
 <head>
-    <title>About</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>${pageTitle!'About'}</title>
+    <link rel="stylesheet" href="/styles.css">
 </head>
 
 <body>
 
     <nav>
-        <a href="index.html">Home</a>
-        <a href="details.html">Details</a>
-        <a href="about.html">About</a>
-        <a href="new-character-form.html">Add a Character</a>
+        <a href="/characters">Home</a>
+        <a href="/about">About</a>
+        <a href="/characters/1">Details</a>
+        <a href="/characters/new">Add a Character</a>
     </nav>
 
     <div class="about">
@@ -29,7 +29,7 @@
 
     </div>
 
-    <a href="index.html" class="back-button">Back to Gallery</a>
+    <a href="/characters" class="back-button">Back to Gallery</a>
 
 </body>
 
