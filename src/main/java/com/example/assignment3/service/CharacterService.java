@@ -38,6 +38,11 @@ public class CharacterService {
             character.setDescription(updatedCharacter.getDescription());
             character.setUniverse(updatedCharacter.getUniverse());
             character.setRole(updatedCharacter.getRole());
+            character.setSpecies(updatedCharacter.getSpecies());
+            character.setImageUrl(updatedCharacter.getImageUrl());
+            character.setAbilities(updatedCharacter.getAbilities());
+            character.setAppearance(updatedCharacter.getAppearance());
+            character.setPowerLevel(updatedCharacter.getPowerLevel());
             return Optional.of(characterRepository.save(character));
         }
         return Optional.empty();
