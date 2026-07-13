@@ -33,7 +33,7 @@
             <input type="text" id="abilities" name="abilities">
 
             <label>Image URL:</label>
-            <input type="url" id="imageUrl" name="imageUrl">
+            <input type="text" id="imageUrl" name="imageUrl" placeholder="https://example.com/image.jpg or /images/character.png">
 
             <label>Species:</label>
             <input type="text" id="species" name="species">
