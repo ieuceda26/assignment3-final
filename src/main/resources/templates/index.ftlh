@@ -19,8 +19,10 @@
         <h1>${pageTitle!'Character Gallery'}</h1>
 
         <div class="gallery">
+
             <#list characterList as character>
                 <div class="card">
+
                     <img src="${character.imageUrl!''}" alt="${character.name}" />
                     <div class="card-body">
                         <h2>${character.name}</h2>
@@ -29,6 +31,7 @@
                         <p>${character.powerLevel!''}</p>
                         <a href="/characters/${character.characterId}">View Details</a>
                     </div>
+
                 </div>
             </#list>
         </div>
